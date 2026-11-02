@@ -167,7 +167,7 @@ export function Access125ShowcaseModal({
             </div>
 
             {/* Main Stage Image Viewer */}
-            <div className="relative w-full h-72 sm:h-96 bg-neutral-950 rounded-2xl overflow-hidden border border-white/10 flex items-center justify-center group">
+            <div className="relative w-full h-60 sm:h-96 bg-neutral-950 rounded-2xl overflow-hidden border border-white/10 flex items-center justify-center group">
               <img
                 src={activeImage.imageUrl}
                 alt={activeImage.title}
@@ -177,30 +177,30 @@ export function Access125ShowcaseModal({
               {/* Prev / Next Navigation Buttons */}
               <button
                 onClick={handlePrev}
-                className="absolute left-3 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-black/60 hover:bg-black/90 text-white border border-white/10 transition-all cursor-pointer group-hover:scale-105"
+                className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 p-2 sm:p-2.5 rounded-full bg-black/70 hover:bg-black/90 text-white border border-white/10 transition-all cursor-pointer"
                 aria-label="Previous photo"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
               <button
                 onClick={handleNext}
-                className="absolute right-3 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-black/60 hover:bg-black/90 text-white border border-white/10 transition-all cursor-pointer group-hover:scale-105"
+                className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 p-2 sm:p-2.5 rounded-full bg-black/70 hover:bg-black/90 text-white border border-white/10 transition-all cursor-pointer"
                 aria-label="Next photo"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
 
               {/* Image Caption Overlay */}
-              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent p-4 text-white">
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/95 via-black/70 to-transparent p-3 sm:p-4 text-white">
                 <div className="flex items-center justify-between">
                   <div>
-                    <span className="text-[11px] font-bold text-amber-400 uppercase tracking-wide">
+                    <span className="text-[10px] sm:text-[11px] font-bold text-amber-400 uppercase tracking-wide">
                       Photo {selectedImageIndex + 1} of {filteredGallery.length}
                     </span>
-                    <h4 className="font-heading text-lg sm:text-xl leading-tight">
+                    <h4 className="font-heading text-base sm:text-xl leading-tight">
                       {lang === 'hi' ? activeImage.titleHi : activeImage.title}
                     </h4>
-                    <p className="text-xs text-neutral-300 line-clamp-1 mt-0.5">
+                    <p className="text-[11px] sm:text-xs text-neutral-300 line-clamp-1 mt-0.5">
                       {lang === 'hi' ? activeImage.descriptionHi : activeImage.description}
                     </p>
                   </div>

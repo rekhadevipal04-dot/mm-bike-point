@@ -109,7 +109,7 @@ export function VehicleCatalog({
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder={t.searchPlaceholder}
-                className="w-full pl-10 pr-9 py-2.5 rounded-lg bg-[#111417] border border-white/10 text-white placeholder-neutral-500 text-sm focus:outline-none focus:border-amber-400 transition-colors"
+                className="w-full pl-10 pr-9 py-2.5 rounded-lg bg-[#111417] border border-white/10 text-white placeholder-neutral-500 text-base sm:text-sm focus:outline-none focus:border-amber-400 transition-colors"
               />
               {searchTerm && (
                 <button
@@ -244,12 +244,12 @@ export function VehicleCatalog({
                 className="bg-[#171b1f] border border-white/10 hover:border-amber-400/40 rounded-xl overflow-hidden flex flex-col group transition-all duration-200 hover:shadow-2xl hover:shadow-black/60"
               >
                 {/* Real High-Resolution Vehicle Photo */}
-                <div className="relative h-48 sm:h-52 w-full overflow-hidden bg-neutral-900">
+                <div className="relative h-52 sm:h-56 w-full overflow-hidden bg-[#121619] flex items-center justify-center p-2">
                   <img
                     src={vehicle.image}
                     alt={`${vehicle.brand} ${vehicle.name}`}
                     loading="lazy"
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 brightness-95 group-hover:brightness-100"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       // Fallback gracefully if image network drops
                       (e.target as HTMLElement).style.display = 'none';
@@ -257,7 +257,7 @@ export function VehicleCatalog({
                   />
 
                   {/* Gradient shadow overlay for badge readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#171b1f] via-black/20 to-black/50 pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#171b1f] via-transparent to-black/40 pointer-events-none" />
 
                   {/* Top Badges */}
                   <div className="absolute top-3 left-3 right-3 flex items-center justify-between z-10">

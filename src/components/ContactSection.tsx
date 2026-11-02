@@ -50,10 +50,10 @@ Please confirm availability at Shop 5 & 6 Mandapeshwar showroom.`;
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
           {/* Test Ride Booking Form */}
-          <div className="lg:col-span-6 bg-[#171b1f] border border-white/10 rounded-2xl p-6 sm:p-8">
-            <div className="mb-6">
+          <div className="lg:col-span-6 bg-[#171b1f] border border-white/10 rounded-2xl p-4 sm:p-8">
+            <div className="mb-5 sm:mb-6">
               <h3 className="font-heading text-2xl sm:text-3xl text-white">
                 {t.testRideFormTitle}
               </h3>
@@ -73,7 +73,7 @@ Please confirm availability at Shop 5 & 6 Mandapeshwar showroom.`;
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="e.g. Rahul Sharma"
-                  className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-sm placeholder-neutral-500 focus:outline-none focus:border-amber-400 transition-colors"
+                  className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-base sm:text-sm placeholder-neutral-500 focus:outline-none focus:border-amber-400 transition-colors"
                 />
               </div>
 
@@ -87,7 +87,7 @@ Please confirm availability at Shop 5 & 6 Mandapeshwar showroom.`;
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="e.g. 9876543210"
-                  className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-sm placeholder-neutral-500 focus:outline-none focus:border-amber-400 transition-colors"
+                  className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-base sm:text-sm placeholder-neutral-500 focus:outline-none focus:border-amber-400 transition-colors"
                 />
               </div>
 
@@ -98,7 +98,7 @@ Please confirm availability at Shop 5 & 6 Mandapeshwar showroom.`;
                 <select
                   value={vehicle}
                   onChange={(e) => setVehicle(e.target.value)}
-                  className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-400 transition-colors"
+                  className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-base sm:text-sm focus:outline-none focus:border-amber-400 transition-colors"
                 >
                   <option value="">-- Select Model --</option>
                   {VEHICLES.map((v) => (
@@ -110,7 +110,7 @@ Please confirm availability at Shop 5 & 6 Mandapeshwar showroom.`;
                 </select>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                 <div>
                   <label className="block text-xs font-semibold text-neutral-300 mb-1.5">
                     {t.preferredDate}
@@ -119,7 +119,7 @@ Please confirm availability at Shop 5 & 6 Mandapeshwar showroom.`;
                     type="date"
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
-                    className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-400 transition-colors"
+                    className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-base sm:text-sm focus:outline-none focus:border-amber-400 transition-colors"
                   />
                 </div>
 
@@ -130,7 +130,7 @@ Please confirm availability at Shop 5 & 6 Mandapeshwar showroom.`;
                   <select
                     value={timeSlot}
                     onChange={(e) => setTimeSlot(e.target.value)}
-                    className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-sm focus:outline-none focus:border-amber-400 transition-colors"
+                    className="w-full bg-[#111417] border border-white/10 text-white rounded-lg px-3.5 py-2.5 text-base sm:text-sm focus:outline-none focus:border-amber-400 transition-colors"
                   >
                     <option value="Morning (10 AM - 1 PM)">Morning (10 AM - 1 PM)</option>
                     <option value="Afternoon (1 PM - 4 PM)">Afternoon (1 PM - 4 PM)</option>
