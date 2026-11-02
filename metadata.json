@@ -1,0 +1,6 @@
+{
+  "name": "M.M. Bike Point - Multi-Brand Two-Wheeler Showroom Mumbai",
+  "description": "Multi-brand bike and scooter showroom in Mandapeshwar, Dahisar West, Mumbai. Explore Hero, Honda, Bajaj, TVS, Suzuki, and Yamaha with instant EMI, exchange, and test rides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
